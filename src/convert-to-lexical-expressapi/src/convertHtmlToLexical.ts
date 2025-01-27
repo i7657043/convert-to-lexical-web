@@ -2,7 +2,7 @@ import { $generateNodesFromDOM } from '@lexical/html';
 import { $getRoot, createEditor, $getSelection } from 'lexical';
 import { JSDOM } from 'jsdom';
 
-export function convertHtmlToLexical(htmlString: string, fieldName: string): { [key: string]: any; } {
+export function convertHtmlToLexical(htmlString: string, fieldName: string){
   const editor = createEditor();
 
   editor.update(

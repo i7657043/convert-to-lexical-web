@@ -57,7 +57,7 @@ resource "azurerm_container_app" "this" {
 
 variable "imageTag" {
   type      = string
-  sensitive = true
+  sensitive = false
 }
 
 variable "acrpassword" {
